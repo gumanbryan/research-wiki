@@ -1,0 +1,18 @@
+:root {
+  color-scheme: light;
+  --canvas: #fff8e9;
+  --paper: #fffdf8;
+  --ink: #153d50;
+  --muted: #45616a;
+  --accent: #24556c;
+  --line: #285a70;
+  --aqua: #68bbd0;
+  --aqua-light: #def4f8;
+  --pink: #f3a1b0;
+  --pink-light: #fff0f2;
+  --yellow: #f4db83;
+  --yellow-light: #fff1bf;
+  --dot: #e8d9b9;
+  --shadow: #285a7024;
+  font-family: "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
+}
