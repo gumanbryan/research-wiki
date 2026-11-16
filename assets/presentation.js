@@ -4,7 +4,6 @@ const navigation = document.querySelector('.navigation');
 const previous = document.querySelector('#previous');
 const next = document.querySelector('#next');
 const page = document.querySelector('#page');
-const fullscreen = document.querySelector('#fullscreen');
 let index = 0;
 
 function showSlide(target) {
@@ -26,22 +25,6 @@ if (slides.length) {
         event.target.closest?.('input, textarea, select, [contenteditable]')) return;
     event.preventDefault();
     showSlide(index + (event.key === 'ArrowRight' ? 1 : -1));
-  });
-}
-
-if (fullscreen && document.fullscreenEnabled) {
-  fullscreen.hidden = false;
-  fullscreen.addEventListener('click', async () => {
-    try {
-      if (document.fullscreenElement) await document.exitFullscreen();
-      else await document.documentElement.requestFullscreen();
-    } catch {
-      fullscreen.disabled = true;
-      fullscreen.textContent = '目前無法全螢幕';
-    }
-  });
-  document.addEventListener('fullscreenchange', () => {
-    fullscreen.textContent = document.fullscreenElement ? '離開全螢幕' : '全螢幕';
   });
 }
 

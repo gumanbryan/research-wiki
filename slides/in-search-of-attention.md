@@ -107,8 +107,18 @@ $$
 
 **原文位置**　Da 等（2011）Table VI、Ben-Rephael 等（2017）Tables 5–7
 
-## 11. 建議文獻
+## 11. 建議文獻 · 原文引用
 
-- **Brad M. Barber 與 Terrance Odean（2008）**。*All That Glitters: The Effect of Attention and News on the Buying Behavior of Individual and Institutional Investors*。
-- 這篇用新聞、異常成交量和極端單日報酬來衡量哪些股票吸引注意，再用交易資料檢驗散戶是否傾向淨買進這些股票。適合接著讀，理解 Da 等人用 Google 搜尋量檢驗的行為機制。
-- 可讀範圍：公開期刊全文。待匯入 Wiki。[下載 PDF](https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/AllThatGlitters_RFS_2008.pdf) · [DOI](https://doi.org/10.1093/rfs/hhm079)
+- **Brad M. Barber、Terrance Odean（2008）**。《All That Glitters: The Effect of Attention and News on the Buying Behavior of Individual and Institutional Investors》。直接連到本文的行為機制：散戶面對大量買進選項時，會不會更常淨買進吸引注意的股票？ [下載 PDF](https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/AllThatGlitters_RFS_2008.pdf)（公開期刊全文）。
+
+- **Simon Gervais、Ron Kaniel、Dan H. Mingelgrin（2001）**。《The High-Volume Return Premium》。對照以異常成交量衡量股票能見度的做法，可回頭看本文的搜尋量在控制成交量後提供了什麼資訊。 [下載 PDF](https://citeseerx.ist.psu.edu/document?doi=23141f15d605d1baa833a3a552913f9b266b7911&repid=rep1&type=pdf)（公開期刊全文）。
+
+尚未匯入 Wiki。
+
+## 12. 建議文獻 · 近期延伸
+
+- **Ed deHaan、Alastair Lawrence、Robin Litjens（2025 卷期；2024 線上）**。《Measuring Investor Attention Using Google Search》。重新檢查只搜股票代號的衡量誤差，並比較加上「stock」的搜尋詞。適合重做 ASVI 前先讀。 [下載 PDF](https://research.tilburguniversity.edu/files/116296636/dehaan-et-al-2024-measuring-investor-attention-using-google-search.pdf)（公開期刊全文）。
+
+- **María José Ayala、Nicolás Gonzálvez-Gallego、Rocío Arteaga-Sánchez（2024）**。《Google search volume index and investor attention in stock market: a systematic review》。整理 56 篇研究的搜尋詞、區域與頻率選擇。適合找不同市場或不同資料頻率的做法。 [下載 PDF](https://link.springer.com/content/pdf/10.1186/s40854-023-00606-y.pdf)（開放取用全文）。
+
+尚未匯入 Wiki。

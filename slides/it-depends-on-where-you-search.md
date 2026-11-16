@@ -92,12 +92,18 @@ $$\mathrm{AIA}_{i,t}=\mathbf{1}\{\mathrm{Score}_{i,t}\geq3\}$$
 
 **原文位置**　§3.1–3.3、Tables 6–8
 
-## 12. 建議文獻
+## 12. 建議文獻 · 原文引用
 
-- Stefano DellaVigna 與 Joshua M. Pollet（2009），Investor Inattention and Friday Earnings Announcements。
+- **Stefano DellaVigna、Joshua M. Pollet（2009）**。《Investor Inattention and Friday Earnings Announcements》。用盈餘公告落在週五或其他平日來比較即時反應與後續漂移，適合對照 Bloomberg 直接衡量的做法。 [下載 PDF](https://eml.berkeley.edu/~sdellavi/wp/earnfr080204.pdf)（公開作者刊前版）。
 
-- 比較週五與其他平日的盈餘公告反應，適合對照以公告時點研究注意力不足的方法。公開作者全文為刊前版。
+- **David Hirshleifer、Sonya Seongyeon Lim、Siew Hong Teoh（2009）**。《Driven to Distraction: Extraneous Events and Underreaction to Earnings News》。用同日其他公司的盈餘公告數量衡量分心，適合對照「資訊太多」與「機構搜尋或閱讀變少」兩種研究設計。 [下載 PDF](https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/c/362/files/2011/02/Driven-to-Distraction-Extraneous-Events-and-Underreaction-to-Earnings-News.pdf)（公開期刊全文）。
 
-**原文位置**　延伸閱讀
+尚未匯入 Wiki。
 
-[下載作者刊前版 PDF](https://eml.berkeley.edu/~sdellavi/wp/earnfr080204.pdf)
+## 13. 建議文獻 · 近期延伸
+
+- **Jiayi Zheng（2024）**。《Institutional attention and investment efficiency》。同樣研究盈餘公告日的機構注意力，將結果變數延伸到企業投資決策。適合看注意力研究如何跨到公司理財。 [下載 PDF](https://research-management.mq.edu.au/ws/portalfiles/portal/403711601/Accounting_Finance_-_2024_-_Zheng_-_Institutional_attention_and_investment_efficiency.pdf)（公開期刊全文）。
+
+- **Jeremy Michels（2025 卷期；2024 線上）**。《Retail investor trade and the pricing of earnings》。用持有個股的 Robinhood 使用者人數檢查散戶對盈餘公告的反應，可與本文的機構注意力結果對讀。 [DOI／期刊摘要](https://doi.org/10.1007/s11142-024-09825-9)（期刊摘要）。
+
+尚未匯入 Wiki。
