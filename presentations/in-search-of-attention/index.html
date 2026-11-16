@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>In Search of Attention｜論文導讀</title>
+  <link rel="stylesheet" href="../../templates/presentation.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css" integrity="sha384-WwGtaC6ywCHxA5cstpj/3+xIZvTez8dq2IcBQaXRkenHZ7FVVq1ZROtURwfbtTlG" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js" integrity="sha384-a1WQdjRj162i159OYq041X6I4K8NenkrI09LlPmiHg0YOb7CR+wJOraXwK9abpnE" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide" aria-labelledby="slide-1">
+      <header><p class="context">Da、Engelberg 與 Gao（2011）</p><h1 id="slide-1">In Search of Attention</h1></header>
+      <p class="lead">Google 搜尋量能不能衡量投資人注意力，並預測後續股價？</p>
+<p>作者先驗證搜尋活動與散戶交易的關聯，再檢查美股短期報酬、後續反轉與 IPO 表現。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · 摘要、pp. 1461–1466</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-2">
+      <header><h1 id="slide-2">為何要看投資人主動搜尋？</h1></header>
+      <ul><li>新聞、週轉率和極端報酬是常見的間接衡量。搜尋則記錄了主動找資訊的行為。</li><li>作者檢驗一個行為機制：注意力可能影響散戶的買進選擇，讓受關注的股票面臨暫時的買盤壓力。</li></ul>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · 導論，pp. 1462–1465</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-3">
+      <header><h1 id="slide-3">ASVI 衡量這週搜尋得有多異常</h1></header>
+      <p>$\mathrm{SVI}_{i,t}$ 是股票 $i$ 在第 $t$ 週的 Google 搜尋量指數。上市股票以股票代號搜尋。</p>
+<div class="formula"><p>$$\mathrm{ASVI}_{i,t}=\ln(\mathrm{SVI}_{i,t})-\ln\!\left[\operatorname{median}(\mathrm{SVI}_{i,t-1},\ldots,\mathrm{SVI}_{i,t-8})\right]$$</p></div>
+<p>ASVI 為正，代表這週搜尋量高於該股票過去八週的中位數。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §I、Table I</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-4">
+      <header><h1 id="slide-4">搜尋活動與散戶交易有關</h1></header>
+      <p>主樣本是 2004 年 1 月至 2008 年 6 月間曾納入 Russell 3000 的 <strong>3,606 檔美股</strong>。</p>
+<ul><li>新聞、異常週轉率和絕對異常報酬只能解釋 ASVI 變異的一小部分。</li><li>搜尋量變化與 Dash-5 的個人訂單及交易活動增加相關，支持它反映散戶注意力的解讀。</li></ul>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §I、Tables III–V</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-5">
+      <header><h1 id="slide-5">搜尋熱度升高後，前兩週異常報酬較高</h1></header>
+      <p>ASVI 高一個標準差時，特徵調整後異常報酬的估計差異</p>
+<div class="results">
+  <div><span>第 1 週</span><strong>+18.7 <small>bp</small></strong><p>1% 顯著</p></div>
+  <div><span>第 2 週</span><strong>+14.9 <small>bp</small></strong><p>5% 顯著</p></div>
+</div>
+<p>第 3、4 週未達顯著。第 5–52 週估計為 <strong>−28.9 bp</strong>，在完整樣本中未達顯著。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §IV.A、Table VI，pp. 1482–1483</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-6">
+      <header><h1 id="slide-6">上市前搜尋熱度較高的 IPO，首日報酬較高</h1></header>
+      <p>以公司名稱衡量上市前一週的搜尋熱度。2004–2007 年共有 185 檔 IPO 具有效 SVI。</p>
+<div class="results">
+  <div><span>高 ASVI 組</span><strong>16.98<small>%</small></strong><p>平均首日報酬</p></div>
+  <div><span>低 ASVI 組</span><strong>10.90<small>%</small></strong><p>平均首日報酬</p></div>
+</div>
+<p>後續弱勢主要出現在上市前搜尋量增加、且首日報酬也高的 IPO。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §IV.B、Figure 3、Tables VIII–IX</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-7">
+      <header><h1 id="slide-7">這篇論文的證據能支持到哪裡？</h1></header>
+      <ul><li><strong>短期預測。</strong> 在研究的美股樣本中，異常搜尋量與後續兩週較高的異常報酬有關。</li><li><strong>機制與限制。</strong> 搜尋活動本身無法辨認買賣方向，基本面消息也可能同時推動搜尋和價格。</li><li><strong>長期與交易。</strong> 完整樣本的反轉估計未達顯著。主表提供樣本內估計，交易成本後的績效仍待檢驗。</li></ul>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §I、§IV.A、Tables VI–VII</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-8">
+      <header><h1 id="slide-8">Table V 怎麼驗證散戶注意力？</h1></header>
+      <p>研究用 SEC Dash-5 的月度訂單與交易資料，檢查搜尋量變化是否伴隨個人交易活動增加。</p>
+      <p>作者也比較不同交易場所。結果支持散戶注意力的解讀，搜尋資料仍無法逐筆確認搜尋者身分或交易方向。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §III、Table V</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-9">
+      <header><h1 id="slide-9">Table VI 怎麼讀迴歸係數？</h1></header>
+      <p>依序看 ASVI 那一列的第 1、2、3、4 週，以及第 5–52 週。由於 ASVI 已標準化，係數對應高一個標準差的報酬差異。</p>
+      <p>作者以每週 Fama–MacBeth 橫斷面迴歸估計，報酬按市值、帳面市值比及動能調整。週期與顯著性一起讀。</p>
+      <footer><a href="https://doi.org/10.1111/j.1540-6261.2011.01679.x">期刊原文</a> · §IV.A、Table VI，pp. 1482–1483</footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-10">
+      <header><h1 id="slide-10">延伸到機構投資人</h1></header>
+      <p>本篇以週頻 Google 搜尋量研究較偏散戶的注意力及後續股價。</p>
+      <p>2017 年延伸研究加入 Bloomberg 終端日頻訊號，並用公告當日與公告後漂移來考察資訊反映。兩篇的注意力代理、事件設定與報酬期間需分開對照。</p>
+      <footer><a href="https://doi.org/10.1093/rfs/hhx031">期刊原文</a> · Da 等（2011）Table VI、Ben-Rephael 等（2017）Tables 5–7 · <a href="../it-depends-on-where-you-search/">閱讀 2017 年論文簡報</a></footer>
+    </section>
+    <section class="slide" aria-labelledby="slide-11">
+      <header><h1 id="slide-11">建議文獻</h1></header>
+      <p><strong>Brad M. Barber 與 Terrance Odean（2008）</strong><br>
+        <cite>All That Glitters: The Effect of Attention and News on the Buying Behavior of Individual and Institutional Investors</cite></p>
+      <p>這篇用新聞、異常成交量和極端單日報酬來衡量哪些股票吸引注意，再用交易資料檢驗散戶是否傾向淨買進這些股票。適合接著讀，理解 Da 等人用 Google 搜尋量檢驗的行為機制。</p>
+      <footer>公開期刊全文 · 待匯入 Wiki · <a href="https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/AllThatGlitters_RFS_2008.pdf">下載 PDF</a> · <a href="https://doi.org/10.1093/rfs/hhm079">DOI</a></footer>
+    </section>
+  </main>
+  <nav class="navigation" aria-label="簡報導覽" hidden>
+    <button type="button" id="previous">上一頁</button>
+    <output id="page" aria-live="polite"></output>
+    <button type="button" id="next">下一頁</button>
+    <button type="button" id="fullscreen" hidden>全螢幕</button>
+    <a href="../../index.html#da-2011">回論文資料庫</a>
+  </nav>
+  <script src="../../assets/presentation.js"></script>
+</body>
+</html>

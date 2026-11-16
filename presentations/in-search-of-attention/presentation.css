@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  --canvas: #e5ebef;
+  --paper: #f3f6f8;
+  --ink: #263641;
+  --secondary: #485d6a;
+  --accent: #36596e;
+  --line: #9aafbb;
+  font-family: "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; color: var(--ink); background: var(--canvas); }
+.deck { width: min(94vw, 67rem); margin: clamp(.75rem, 4vw, 2.5rem) auto 0; }
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(.75rem, 2vw, 1.5rem);
+  min-height: min(60vw, 35rem);
+  padding: clamp(1.25rem, 5vw, 3.75rem);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.6;
+}
+h1 { margin: 0; font-size: clamp(1.5rem, 4vw, 2.65rem); line-height: 1.25; }
+p { margin: 0; }
+.context, footer { color: var(--secondary); font-size: .85rem; }
+.context { margin-bottom: .5rem; }
+footer { margin-top: auto; padding-top: .75rem; border-top: 1px solid var(--line); }
+.results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.results > div { border-left: .2rem solid var(--line); padding-left: clamp(.5rem, 2vw, 1rem); }
+.results strong {
+  display: block;
+  color: var(--accent);
+  font-size: clamp(1.45rem, 5vw, 4rem);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+.results small { font-size: .45em; }
+.formula { min-width: 0; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding-block: .25rem; }
+a { color: var(--accent); }
+.navigation { display: flex; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; }
+button { background: var(--paper); color: var(--ink); border: 1px solid var(--line); padding: .55rem .9rem; font: inherit; }
+button:disabled { opacity: .55; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 420px) {
+  .slide { min-height: 23rem; }
+}
+
+.slide .lead { color: var(--accent); font-size: clamp(1.25rem, 3vw, 2rem); font-weight: 700; }
+.slide ul { display: grid; gap: .8rem; margin: 0; padding-inline-start: 1.25em; }
